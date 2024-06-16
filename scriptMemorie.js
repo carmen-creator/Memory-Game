@@ -29,9 +29,7 @@ function onImageClick(e) {
     let poza = e.target;
     console.log(e.target);
     console.log(poza);
-    //daca elementul apasat nu are o proprietate k inseamna ca nu am dat click pe o imagini. Si atunci de ce as avea nevoie de aceasta linie de cod???????
-    //acest cod se evalueaza a fi false si atunci care este momentul cand se evalueaza a fi true ???????adica nu inteleg miza, poate fi un momenent cand se evalueaza a fi true aceasta expresie ? !poza.hasOwnProperty("k") eu cred ca mereu e este false
-
+ 
 
     if (!poza.hasOwnProperty("k")) return
     if (poza.hasOwnProperty("done") || poza == poza1 || busy) return;
